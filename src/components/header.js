@@ -1,5 +1,5 @@
 import React from 'react'
-import background from '../images/glitter_background_gold.jpg'
+import background from '../images/background_bride.jpg'
 import image_title from '../images/title.png'
 import Image from './common/Image'
 import ParallaxMousemove from 'react-parallax-mousemove'

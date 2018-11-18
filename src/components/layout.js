@@ -11,6 +11,8 @@ import './layout.css'
 const theme = {
   global: {
     colors: {
+      'brand': '#f48d90',
+      'accent-1': '#b0e2f8',
       'light-1': '#ffffff',
       'light-2': '#f5f5f5',
       text: {
