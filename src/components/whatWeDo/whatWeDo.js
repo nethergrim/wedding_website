@@ -1,15 +1,17 @@
 import React from 'react'
-import Text from 'grommet';
+import { Box, Grommet } from 'grommet'
 
+const WhatWeDo = props => (
+  <Box
+    tag="header"
+    direction="row"
+    align="center"
+    justify="between"
+    background="light-1"
+    pad={{ vertical: 'small', horizontal: 'medium' }}
+    elevation="medium"
+    {...props}
+  />
+);
 
-class WhatWeDo extends React.Component {
-  render() {
-      return (
-          <Text>Hello</Text>
-      )
-  };
-
-
-}
-
-export default WhatWeDo;
+export default WhatWeDo
