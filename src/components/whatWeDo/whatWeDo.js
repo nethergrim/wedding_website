@@ -20,15 +20,15 @@ const WhatWeDo = props => (
     elevation="medium"
     {...props}
   >
-    <Text color="brand" size="xlarge">
+    <Text color="brand" size="xlarge" pad={{ vertical: 'small', horizontal: 'small' }}>
       Что мы организовываем
     </Text>
 
-    <Box width="medium">
+    <Box width="medium" pad={{ vertical: 'large', horizontal: 'small' }}>
       <Image src={divider} fit="contain" />
     </Box>
 
-    <Box pad={{ vertical: 'large', horizontal: 'medium' }}>
+    <Box pad={{  horizontal: 'small' }}>
       <Grid
         columns={{
           count: 2,
