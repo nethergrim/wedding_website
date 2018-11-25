@@ -41,7 +41,7 @@ const WhatWeDo = props => (
         <CompoundView text="Выездная церемония" image={icon_wedding} />
         <CompoundView text="Предложения руки и сердца" image={icon_proposal} />
         <CompoundView text="Координация свадеб" image={icon_coordinator} />
-        <CompoundView text="Корпоративные мероприятия" image={icon_confetti} />
+        <CompoundView text="Корпоративы" image={icon_confetti} />
       </Grid>
     </Box>
   </Box>
