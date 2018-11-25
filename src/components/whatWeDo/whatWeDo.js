@@ -1,15 +1,17 @@
 import React from 'react'
 import { Box, Text, Image, Grid } from 'grommet'
 import divider from '../../images/divider_gift.svg'
-
-const LabeledImage = props => (
-    <Box background="brand">Item 1</Box>
-
-);
+import icon_love from '../../images/love.svg'
+import icon_bride from '../../images/bride.svg'
+import icon_wedding from '../../images/ceremony.svg'
+import icon_proposal from '../../images/proposal.svg'
+import icon_coordinator from '../../images/decoration.svg'
+import icon_confetti from '../../images/confetti.svg'
+import CompoundView from '../common/CompoundView'
 
 const WhatWeDo = props => (
   <Box
-    tag="header"
+    tag="what_we_do"
     direction="column"
     align="center"
     justify="between"
@@ -26,27 +28,23 @@ const WhatWeDo = props => (
       <Image src={divider} fit="contain" />
     </Box>
 
-    {/* <Text color="dark-3" size="small" textAlign="center">
-      Создаем самые стильные и неповторимые торжества в Харькове
-    </Text> */}
-
-    <Box pad={{vertical: 'large'}}>
+    <Box pad={{ vertical: 'large', horizontal: 'medium' }}>
       <Grid
         columns={{
-          count: 3,
+          count: 2,
           size: 'auto',
         }}
-        gap="xlarge"
+        gap="medium"
       >
-        <LabeledImage></LabeledImage>
-        <LabeledImage></LabeledImage>
-        <LabeledImage></LabeledImage>
-        <LabeledImage></LabeledImage>
+        <CompoundView text="Свадьба в Украине" image={icon_love} />
+        <CompoundView text="Европейское венчание" image={icon_bride} />
+        <CompoundView text="Выездная церемония" image={icon_wedding} />
+        <CompoundView text="Предложения руки и сердца" image={icon_proposal} />
+        <CompoundView text="Координация свадеб" image={icon_coordinator} />
+        <CompoundView text="Корпоративные мероприятия" image={icon_confetti} />
       </Grid>
     </Box>
   </Box>
 )
-
-
 
 export default WhatWeDo

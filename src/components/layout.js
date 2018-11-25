@@ -4,7 +4,7 @@ import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
 
 import Header from './header'
-import WhatWeDo from './whatWeDo/whatWeDo'
+import WhatWeDo from './whatWeDo/WhatWeDo'
 import { Grommet, Box } from 'grommet'
 import './layout.css'
 
